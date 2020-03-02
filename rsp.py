@@ -24,13 +24,12 @@ try:
 	def loadStartAnimation():
 		print(Fore.MAGENTA + 'Загружаем игру... \n')
 		time.sleep(0.1)
-		start = '0123456789'
-		succsess = ' Game was loaded successfully!'
+		start = ['L','o','a','d','i','n','g', ' ','G','a','m','e','.']
+		succsess = '\n Game was loaded successfully!'
 		
-		for i in range(len(start)):
-			i = '|*'
+		for i in range(0, len(start)):
 			time.sleep(0.2)
-			print(Fore.GREEN, Style.BRIGHT + " ", i, end="")
+			print(Fore.GREEN, Style.BRIGHT + " ", start[i], end="")
 		print(succsess)
 	
 	
@@ -38,13 +37,12 @@ try:
 	def loadShutdownAnimation():
 		print(Fore.RED + 'Выгружаем игру... \n')
 		time.sleep(0.1)
-		start = '0123456789'
-		succsess = ' Game was shutdown successfully!'
+		start = ['S','h','u','t','d','o','w','n', ' ','G','a','m','e','.']
+		succsess = '\n Game was shutdown successfully!'
 		
-		for i in range(len(start)):
-			i = '*|'
+		for i in range(0, len(start)):
 			time.sleep(0.2)
-			print(Fore.RED + " ", i, end="")
+			print(Fore.RED + " ", start[i], end="")
 		print(succsess)
 	
 	
